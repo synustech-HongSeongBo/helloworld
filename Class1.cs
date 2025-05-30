@@ -28,3 +28,22 @@ public class Class1
 
 	}
 }
+
+public class ProgramHandler
+{
+    public void ExitProgram()
+    {
+        try
+        {
+            // 종료 전 필요한 정리 작업 수행
+            Console.WriteLine("프로그램을 종료합니다...");
+
+            // 프로그램 종료
+            Environment.Exit(0);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("프로그램 종료 중 예외 발생: " + ex.Message);
+        }
+    }
+}
